@@ -32,16 +32,40 @@ function QuestionBoard({ title, categories }: QuestionBoardPropTypes) {
     setSelectedQuestionPosition(questionPosition)
   }
 
+  function unselectQuestion() {
+    setSelectedQuestionPosition({ questionIndex: -1, categoryIndex: -1 })
+    setIsCardFlipped(false);
+  }
+
+  const [isCardFlipped, setIsCardFlipped] = useState<boolean>(false);
+
   return (
     <div className="question-board">
-      <h1>{title}</h1>
+      <h1 className="question-board-title">{title}</h1>
       {hasQuestionSelected &&
         (
-          <div>
-            <div>
-              {selectedQuestion?.questionText}
+          <div className={`question-card ${isCardFlipped ? 'flipped' : ''}`}>
+            <div className="question-card-inner">
+              <div className="question-card-front">
+                <h6>Question</h6>
+                <p className="question-card-content">
+                  {selectedQuestion?.questionText}
+                </p>
+
+                <button onClick={() => setIsCardFlipped(true)}>Show Answer</button>
+              </div>
+              <div className="question-card-back">
+                <h6>Answer</h6>
+                <p className="question-card-content">
+                  {selectedQuestion?.answerText}
+                </p>
+                <button onClick={() => setIsCardFlipped(false)}>Hide Answer</button>
+                <button onClick={unselectQuestion}>Back</button>
+              </div>
             </div>
-            <button onClick={() => setSelectedQuestionPosition({ questionIndex: -1, categoryIndex: -1 })}>Back</button>
+            <div>
+            </div>
+            {/* <button onClick={() => setSelectedQuestionPosition({ questionIndex: -1, categoryIndex: -1 })}>Back</button> */}
           </div>
         )
       }
