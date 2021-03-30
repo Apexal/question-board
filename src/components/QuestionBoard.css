@@ -29,12 +29,11 @@ table th {
 .question-card {
     background-color: transparent;
     perspective: 1000px;
-    width: 800px;
+    width: 1200px;
     height: 500px;
 
     margin: 0 auto;
     font-size: 3rem;
-    padding: 20px;
 }
 
 .question-card-inner {
@@ -43,6 +42,8 @@ table th {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border: 3px solid white;
+
 }
 
 .question-card.flipped .question-card-inner {
