@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/question-board/static/css/main.4e0ae265.chunk.css",
+    "main.css": "/question-board/static/css/main.dd8817dd.chunk.css",
     "main.js": "/question-board/static/js/main.f84cc74f.chunk.js",
     "main.js.map": "/question-board/static/js/main.f84cc74f.chunk.js.map",
     "runtime-main.js": "/question-board/static/js/runtime-main.8bd5480b.js",
@@ -10,13 +10,13 @@
     "static/js/3.e22289d5.chunk.js": "/question-board/static/js/3.e22289d5.chunk.js",
     "static/js/3.e22289d5.chunk.js.map": "/question-board/static/js/3.e22289d5.chunk.js.map",
     "index.html": "/question-board/index.html",
-    "static/css/main.4e0ae265.chunk.css.map": "/question-board/static/css/main.4e0ae265.chunk.css.map",
+    "static/css/main.dd8817dd.chunk.css.map": "/question-board/static/css/main.dd8817dd.chunk.css.map",
     "static/js/2.82236810.chunk.js.LICENSE.txt": "/question-board/static/js/2.82236810.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8bd5480b.js",
     "static/js/2.82236810.chunk.js",
-    "static/css/main.4e0ae265.chunk.css",
+    "static/css/main.dd8817dd.chunk.css",
     "static/js/main.f84cc74f.chunk.js"
   ]
 }
