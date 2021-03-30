@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Category, Question, QuestionPosition } from "../services/game";
 import QuestionBoardCell from "./QuestionBoardCell";
 
+import './QuestionBoard.css'
+
 export type QuestionBoardPropTypes = {
   title: string;
   categories: Category[];
@@ -21,10 +23,6 @@ function QuestionBoard({ title, categories }: QuestionBoardPropTypes) {
   const isQuestionRevealed = ({ categoryIndex, questionIndex }: QuestionPosition) => revealedQuestionPositions.find(qp => qp.categoryIndex === categoryIndex && qp.questionIndex === questionIndex) !== undefined
 
   const questionIndices = Array.from(Array(rowCount).keys());
-
-  function handleSelectQuestion(questionPosition: QuestionPosition) {
-    alert('clicked me')
-  }
 
   function selectAndRevealQuestion(questionPosition: QuestionPosition) {
     if (!isQuestionRevealed(questionPosition)) {
