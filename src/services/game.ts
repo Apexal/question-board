@@ -1,17 +1,22 @@
 /** Represents a Question that can be viewed once
  * and then remains revealed. */
 export interface Question {
-    /** The level of the question. Lower is easier. */
-    level: number;
     questionText: string;
     answerText: string;
     isRevealed: boolean;
+}
+
+export interface SelectedQuestion {
+    categoryIndex: number;
+    questionIndex: number;
 }
 
 /**
  * Represents a category of related questions.
  */
 export interface Category {
+    /** Visible name of the category */
     title: string;
+    /** Questions for this category */
     questions: Question[];
 }
