@@ -1,6 +1,8 @@
 import React from "react";
 import { Question, QuestionPosition } from "../services/game";
 
+import './QuestionBoardCell.css';
+
 export type QuestionBoardCellPropTypes = {
   questionPosition: QuestionPosition;
   question: Question;
@@ -11,7 +13,7 @@ function QuestionBoardCell({ questionPosition, question, isRevealed, handleSelec
   const questionLevel = questionPosition.questionIndex + 1;
 
   return (
-    <td className={`question-board-cell level-${questionLevel}`} onClick={() => handleSelect(questionPosition)}>
+    <td className={`question-board-cell level-${questionLevel} ${isRevealed ? 'is-revealed' : ''}`} onClick={() => handleSelect(questionPosition)}>
       {!isRevealed && 
         <div>
           Level {questionLevel}

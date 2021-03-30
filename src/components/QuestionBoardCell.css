@@ -1,0 +1,13 @@
+td.question-board-cell {
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e07a5f;
+    border-radius: 2px;
+    color: white;
+}
+
+td.question-board-cell.is-revealed {
+    background-color: #3d405b;
+}
