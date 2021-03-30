@@ -6,7 +6,7 @@ export interface Question {
     isRevealed: boolean;
 }
 
-export interface SelectedQuestion {
+export interface QuestionPosition {
     categoryIndex: number;
     questionIndex: number;
 }
