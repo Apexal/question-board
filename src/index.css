@@ -18,7 +18,8 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background: radial-gradient(circle, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 100%); 
 }
 
 
