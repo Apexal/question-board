@@ -1,19 +1,20 @@
 .question-board-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0 auto;
-    color: white;
+    color: var(--font-color);
     background-color: var(--secondary-color);
-    max-width: 1200px;
+    max-width: var(--max-width);
     border: 3px solid white;
+    border-bottom: none;
 }
 
 table {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     border-collapse: collapse;
 }
@@ -22,18 +23,18 @@ table th {
     z-index: 10;
     position: sticky;
     top: 0;
-    color: white;
+    color: var(--font-color);
     background-color: var(--secondary-color);
 }
 
 .question-card {
     background-color: transparent;
     perspective: 1000px;
-    width: 1200px;
+    max-width: var(--max-width);
     height: 500px;
 
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .question-card-inner {
@@ -43,7 +44,6 @@ table th {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     border: 3px solid white;
-
 }
 
 .question-card.flipped .question-card-inner {
@@ -55,7 +55,7 @@ table th {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    color: white;
+    color: var(--font-color);
 
     display: flex;
     flex-direction: column;

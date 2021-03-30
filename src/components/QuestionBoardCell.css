@@ -1,12 +1,13 @@
 td.question-board-cell {
     cursor: pointer;
     width: 100px;
-    height: 200px;
+    height: 150px;
     text-align: center;
+    padding: 10px;
     vertical-align: middle;
     background-color: var(--primary-color);
     border-radius: 2px;
-    color: white;
+    color: var(--font-color);
     border: 3px solid white;
 
     transition: 0.5s transform;

@@ -26,6 +26,26 @@ const categories: Category[] = [
         questionText: 'Where are protons located in an atom?',
         answerText: 'In the nucleus or in the center',
         isRevealed: false
+      }
+    ]
+  },
+  {
+    title: 'Other Thing',
+    questions: [
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'What is the charge of an electron?',
+        answerText: 'Negative',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
       },
       {
         questionText: 'Where are protons located in an atom?',
@@ -56,11 +76,6 @@ const categories: Category[] = [
         questionText: 'Where are protons located in an atom?',
         answerText: 'In the nucleus or in the center',
         isRevealed: false
-      },
-      {
-        questionText: 'Where are protons located in an atom?',
-        answerText: 'In the nucleus or in the center',
-        isRevealed: false
       }
     ]
   },
@@ -75,41 +90,6 @@ const categories: Category[] = [
       {
         questionText: 'What is the charge of an electron?',
         answerText: 'Negative',
-        isRevealed: false
-      },
-      {
-        questionText: 'Where are protons located in an atom?',
-        answerText: 'In the nucleus or in the center',
-        isRevealed: false
-      },
-      {
-        questionText: 'Where are protons located in an atom?',
-        answerText: 'In the nucleus or in the center',
-        isRevealed: false
-      },
-      {
-        questionText: 'Where are protons located in an atom?',
-        answerText: 'In the nucleus or in the center',
-        isRevealed: false
-      }
-    ]
-  },
-  {
-    title: 'Other Thing',
-    questions: [
-      {
-        questionText: 'Where are protons located in an atom?',
-        answerText: 'In the nucleus or in the center',
-        isRevealed: false
-      },
-      {
-        questionText: 'What is the charge of an electron?',
-        answerText: 'Negative',
-        isRevealed: false
-      },
-      {
-        questionText: 'Where are protons located in an atom?',
-        answerText: 'In the nucleus or in the center',
         isRevealed: false
       },
       {
