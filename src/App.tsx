@@ -1,24 +1,77 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import QuestionBoard from './components/QuestionBoard';
+import { Category, Question } from './services/game';
+
+const categories: Category[] = [
+  {
+    title: 'Parts of Atoms',
+    questions: [
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'What is the charge of an electron?',
+        answerText: 'Negative',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      }
+    ]
+  },
+  {
+    title: 'Other Thing',
+    questions: [
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'What is the charge of an electron?',
+        answerText: 'Negative',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      },
+      {
+        questionText: 'Where are protons located in an atom?',
+        answerText: 'In the nucleus or in the center',
+        isRevealed: false
+      }
+    ]
+  },
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <QuestionBoard title="Middle School Science" categories={categories} />
+      </main>
     </div>
   );
 }
