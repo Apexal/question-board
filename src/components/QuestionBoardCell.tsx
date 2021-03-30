@@ -1,16 +1,16 @@
 import React from "react";
-import { Question } from "../services/game";
+import { Question, QuestionPosition } from "../services/game";
 
 export type QuestionBoardCellPropTypes = {
-  questionIndex: number;
+  questionPosition: QuestionPosition;
   question: Question;
-  handleSelect(question: Question): void;
+  handleSelect(): void;
 };
-function QuestionBoardCell({ questionIndex, question, handleSelect }: QuestionBoardCellPropTypes) {
-  const questionLevel = questionIndex + 1;
+function QuestionBoardCell({ questionPosition, question, handleSelect }: QuestionBoardCellPropTypes) {
+  const questionLevel = questionPosition.questionIndex + 1;
 
   return (
-    <td className={`question-board-cell level-${questionLevel}`}>
+    <td className={`question-board-cell level-${questionLevel}`} onClick={() => handleSelect()}>
       Level {questionLevel}
     </td>
   );
