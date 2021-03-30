@@ -4,7 +4,7 @@ td.question-board-cell {
     height: 200px;
     text-align: center;
     vertical-align: middle;
-    background-color: #e07a5f;
+    background-color: var(--primary-color);
     border-radius: 2px;
     color: white;
     border: 3px solid white;
@@ -17,5 +17,5 @@ td.question-board-cell:hover {
 }
 
 td.question-board-cell.is-revealed {
-    background-color: #3d405b;
+    background-color: var(--secondary-color);
 }

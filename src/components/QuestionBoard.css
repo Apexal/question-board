@@ -3,7 +3,7 @@
     font-size: 3rem;
     margin: 0 auto;
     color: white;
-    background-color: #3d405b;
+    background-color: var(--secondary-color);
     max-width: 1200px;
     border: 3px solid white;
 }
@@ -23,7 +23,7 @@ table th {
     position: sticky;
     top: 0;
     color: white;
-    background-color: #3d405b;
+    background-color: var(--secondary-color);
 }
 
 .question-card {
@@ -70,11 +70,11 @@ table th {
 }
 
 .question-card-front {
-    background-color: #e07a5f;
+    background-color: var(--primary-color);
 }
 
 .question-card-back {
-    background-color: #3d405b;
+    background-color: var(--secondary-color);
     transform: rotateX(180deg);
 }
 

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
+:root {
+  --primary-color: #e07a5f;
+  --secondary-color: #3d405b;
+  --background-color: #f4f1de;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,7 +15,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #f4f1de;
+  background-color: var(--background-color);
 }
 
 
