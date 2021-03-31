@@ -2,8 +2,7 @@
  * and then remains revealed. */
 export interface Question {
     questionText: string;
-    answerText: string;
-    isRevealed: boolean;
+    answerText?: string;
 }
 
 export interface QuestionPosition {

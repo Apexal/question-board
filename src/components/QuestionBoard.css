@@ -19,12 +19,26 @@ table {
     border-collapse: collapse;
 }
 
+table thead {
+    border: 3px solid white;
+}
+
 table th {
-    z-index: 10;
-    position: sticky;
-    top: 0;
+    /* z-index: 10; */
+    /* position: sticky; */
+    /* top: 0; */
     color: var(--font-color);
     background-color: var(--secondary-color);
+}
+
+@keyframes fadein {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 .question-card {
@@ -81,6 +95,10 @@ table th {
 .question-card-content {
     flex: 1;
     margin: 0;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
+
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-name: fadein;
 }

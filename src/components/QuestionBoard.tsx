@@ -39,9 +39,11 @@ function QuestionBoard({ title, categories }: QuestionBoardPropTypes) {
 
   const [isCardFlipped, setIsCardFlipped] = useState<boolean>(false);
 
+  const customTitle = hasQuestionSelected ? `${categories[selectedQuestionPosition.categoryIndex].title} Level ${selectedQuestionPosition.questionIndex + 1}` : title;
+
   return (
     <div className="question-board">
-      <h1 className="question-board-title">{title}</h1>
+      <h1 className="question-board-title">{customTitle}</h1>
       {hasQuestionSelected &&
         (
           <div className={`question-card ${isCardFlipped ? 'flipped' : ''}`}>
@@ -52,15 +54,17 @@ function QuestionBoard({ title, categories }: QuestionBoardPropTypes) {
                   {selectedQuestion?.questionText}
                 </p>
 
-                <button onClick={() => setIsCardFlipped(true)}>Show Answer</button>
+                {/* <button onClick={() => setIsCardFlipped(true)}>Show Answer</button> */}
+                <button onClick={unselectQuestion}>Back</button>
+
               </div>
               <div className="question-card-back">
                 <h6>Answer</h6>
                 <p className="question-card-content">
                   {selectedQuestion?.answerText}
                 </p>
-                <button onClick={() => setIsCardFlipped(false)}>Hide Answer</button>
-                <button onClick={unselectQuestion}>Back</button>
+                {/* <button onClick={() => setIsCardFlipped(false)}>Hide Answer</button> */}
+                {/* <button onClick={unselectQuestion}>Back</button> */}
               </div>
             </div>
             <div>

@@ -20,3 +20,17 @@ td.question-board-cell:hover {
 td.question-board-cell.is-revealed {
     background-color: var(--secondary-color);
 }
+
+/* td.question-board-cell.level-2 {
+    background-color: var(--level-2-color);
+
+}
+
+td.question-board-cell.level-3 {
+    background-color: var(--level-3-color);
+
+}
+
+td.question-board-cell.level-4 {
+    background-color: var(--level-4-color);
+} */
